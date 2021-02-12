@@ -3,9 +3,15 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import RouterWeb from './__COMPONENT/__MAIN/0.RouterWeb/RouterWeb'
+import { Provider } from 'react-redux'
+import {store }from './_STORE'
 
 ReactDOM.render(
   <React.StrictMode>
+    <Provider store={store}>
+      <RouterWeb/>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,0 +1,19 @@
+@import '../../../__SASS/CrossBrowser';
+.deezer-card{
+    margin: 1rem;
+    width: 250px;
+    img{
+        @include borderRadius(5px);
+        width:250px;
+        height: 250px;
+        box-shadow: 10px 5px 20px rgba(0, 0, 0, .5);
+        margin-bottom: .5rem;
+    }
+    p{
+        text-align:center;
+        margin: 0;
+    }
+    p:nth-of-type(1){font-weight:700}
+    p:nth-of-type(2){font-size: .9rem; font-weight: 600}
+    p:nth-of-type(3){font-size: .85rem;}
+}
